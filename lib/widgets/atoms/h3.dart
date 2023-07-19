@@ -10,6 +10,8 @@ class AppH3Text extends StatelessWidget {
   @override
   Widget build(BuildContext context) => Text(text,
       style: const TextStyle(
-          color: Colors.black, fontSize: 22.0, fontWeight: FontWeight.w500),
+          color: Theme.of(context).colorScheme.primary,
+          fontSize: 22.0,
+          fontWeight: FontWeight.w500),
       textAlign: align);
 }

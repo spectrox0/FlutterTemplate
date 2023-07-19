@@ -18,7 +18,12 @@ class AppInput extends StatelessWidget {
           ),
           child: TextField(
             decoration: InputDecoration(
-              border: InputBorder.none,
+              enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                      color: Theme.of(context).colorScheme.secondary)),
+              focusedBorder: const OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.white),
+              ),
               hintText: placeholder,
               icon: icon,
             ),

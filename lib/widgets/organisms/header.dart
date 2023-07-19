@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../../utils/colors.dart' as app_colors;
 import '../atoms/input.dart';
 import '../atoms/h2.dart';
 
@@ -30,11 +29,11 @@ class AppHeader extends StatelessWidget {
                 ),
               ],
             )),
-        backgroundColor: app_colors.darkTheme['primary'],
+        backgroundColor: Theme.of(context).colorScheme.primary,
         actions: <Widget>[
           IconButton(
             icon: const Icon(Icons.settings),
-            color: app_colors.darkTheme['text'],
+            color: Theme.of(context).colorScheme.secondary,
             tooltip: 'Add new entry',
             onPressed: () {/* ... */},
           ),
