@@ -30,11 +30,11 @@ class AppHeader extends StatelessWidget {
                 ),
               ],
             )),
-        backgroundColor: app_colors.primary,
+        backgroundColor: app_colors.darkTheme['primary'],
         actions: <Widget>[
           IconButton(
             icon: const Icon(Icons.settings),
-            color: app_colors.grey,
+            color: app_colors.darkTheme['text'],
             tooltip: 'Add new entry',
             onPressed: () {/* ... */},
           ),
