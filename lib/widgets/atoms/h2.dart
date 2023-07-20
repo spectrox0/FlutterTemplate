@@ -9,7 +9,7 @@ class AppH2Text extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Text(text,
-      style: const TextStyle(
+      style: TextStyle(
           color: Colors.black, fontSize: 32.0, fontWeight: FontWeight.w500),
       textAlign: align);
 }

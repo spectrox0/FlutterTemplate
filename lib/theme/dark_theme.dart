@@ -15,4 +15,25 @@ ThemeData darkTheme = ThemeData(
     secondary: Colors.deepPurpleAccent,
     background: Colors.black12,
   ),
+  textTheme: const TextTheme(
+      titleLarge: TextStyle(
+        color: Colors.white,
+        fontSize: 32.0,
+        fontWeight: FontWeight.w500,
+      ),
+      titleMedium: TextStyle(
+        color: Colors.white,
+        fontSize: 22.0,
+        fontWeight: FontWeight.w500,
+      ),
+      titleSmall: TextStyle(
+        color: Colors.white,
+        fontSize: 18.0,
+        fontWeight: FontWeight.w500,
+      ),
+      bodyMedium: TextStyle(
+        color: Colors.white,
+        fontSize: 16.0,
+        fontWeight: FontWeight.w400,
+      )),
 );
