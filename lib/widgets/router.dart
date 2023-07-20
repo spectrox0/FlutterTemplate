@@ -1,6 +1,7 @@
 // private navigators
 import 'package:flutter/material.dart';
 import 'package:flutter_template/pages/home_page.dart';
+import 'package:flutter_template/pages/settings_screen.dart';
 import 'package:flutter_template/widgets/layout.dart';
 import 'package:go_router/go_router.dart';
 
@@ -28,7 +29,7 @@ final goRouter = GoRouter(
           routes: [
             // top route inside branch
             GoRoute(
-              path: '/a',
+              path: '/home',
               pageBuilder: (context, state) => const NoTransitionPage(
                 child: HomePage(),
               ),
@@ -48,9 +49,9 @@ final goRouter = GoRouter(
           routes: [
             // top route inside branch
             GoRoute(
-              path: '/b',
+              path: '/settings',
               pageBuilder: (context, state) => const NoTransitionPage(
-                child: HomePage(),
+                child: SettingsScreen(),
               ),
               // routes: [
               //   // child route

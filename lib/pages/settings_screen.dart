@@ -13,11 +13,8 @@ class SettingsScreen extends StatefulWidget {
 class _SettingsScreenState extends State<SettingsScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: const AppBarHeader(title: "Settings"),
-      body: const Center(
-        child: Text("Settings"),
-      ),
+    return Center(
+      child: Text("Settings"),
     );
   }
 }
