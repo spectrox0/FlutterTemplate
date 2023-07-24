@@ -23,13 +23,11 @@ final goRouter = GoRouter(
         return ScaffoldWithNestedNavigation(navigationShell: navigationShell);
       },
       branches: [
-        // first branch (A)
         StatefulShellBranch(
           navigatorKey: _shellNavigatorAKey,
           routes: [
-            // top route inside branch
             GoRoute(
-              path: '/home',
+              path: 'home',
               pageBuilder: (context, state) => const NoTransitionPage(
                 child: HomePage(),
               ),
@@ -43,13 +41,11 @@ final goRouter = GoRouter(
             ),
           ],
         ),
-        // second branch (B)
         StatefulShellBranch(
           navigatorKey: _shellNavigatorBKey,
           routes: [
-            // top route inside branch
             GoRoute(
-              path: '/settings',
+              path: 'settings',
               pageBuilder: (context, state) => const NoTransitionPage(
                 child: SettingsScreen(),
               ),

@@ -12,12 +12,19 @@ class BarBottom extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return NavigationBar(
-      backgroundColor: Theme.of(context).colorScheme.primary,
+      backgroundColor: Theme.of(context).colorScheme.background,
       elevation: 0,
+      onDestinationSelected: onDestinationSelected,
+      surfaceTintColor: Theme.of(context).colorScheme.onError,
       selectedIndex: selectedIndex,
+      indicatorColor: Theme.of(context).colorScheme.secondary,
+      shadowColor: Theme.of(context).colorScheme.secondary,
       destinations: const [
         NavigationDestination(label: 'Home', icon: Icon(Icons.home)),
-        NavigationDestination(label: 'Settings', icon: Icon(Icons.settings)),
+        NavigationDestination(
+          label: 'Settings',
+          icon: Icon(Icons.settings),
+        ),
       ],
     );
   }
