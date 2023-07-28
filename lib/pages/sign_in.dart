@@ -12,13 +12,8 @@ class SignInScreen extends StatefulWidget {
 class _SignInState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("Sign In"),
-      ),
-      body: const Center(
-        child: Text("Sign In"),
-      ),
+    return SafeArea(
+      child: Center(child: Text("Sign In")),
     );
   }
 }
