@@ -34,7 +34,7 @@ class AppRouter {
               GoRoute(
                 path: APP_PAGE.home.toPath,
                 name: APP_PAGE.home.toName,
-                redirect: (context, state) => {},
+                // redirect: (context, state) => {},
                 pageBuilder: (context, state) => const NoTransitionPage(
                   child: HomePage(),
                 ),
